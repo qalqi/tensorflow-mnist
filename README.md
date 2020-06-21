@@ -7,16 +7,17 @@
 
 ### Requirement ###
 
-- Python >=2.7 or >=3.4
-  - TensorFlow >=1.0
-- Node >=6.9
+- Python >=3.4
+  - TensorFlow >=2.0
+- Node >=10.0
 
 
 ### How to run ###
 
     $ pip install -r requirements.txt
     $ npm install
-    $ gunicorn main:app --log-file=-
+    $ gunicorn main:app --log-file=- 
+    $ python waitress_server.py  [windows]
 
 
 ### Deploy to Heroku ###
